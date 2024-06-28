@@ -42,25 +42,22 @@ body {
 }
 
 .language-selection {
+  display: flex;
   position: absolute;
-  bottom: 20px;
-  right: 20px;
+  bottom: 150px;
   z-index: 999;
+  gap: 50px;
+}
+
+.lang-button {
+  background-color: rgba(0, 0, 0, 0.4);
   color: #fff;
-}
-
-.language-selection input[type="radio"] {
-  display: none;
-}
-
-.language-selection label {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 8px 12px;
-  margin-right: 5px;
-  border-radius: 5px;
+  padding: 12px 24px;
+  border-radius: 10% / 50%;
   cursor: pointer;
+  border: none;
 }
 
-.language-selection label:hover {
-  background-color: rgba(0, 0, 0, 0.7);
+.lang-button:hover {
+  background-color: rgba(0, 0, 0, 0.6);
 }
