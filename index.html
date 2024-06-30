@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Erik Domenech</title>
+    <title>Eric Domenech</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="script/script.js" defer></script>
   </head>
   <body>
     <header class="hero">
@@ -13,10 +14,78 @@
         <h2>Komponist</h2>
       </div>
       <div class="language-selection">
-        <button class="lang-button">EN</button>
-        <button class="lang-button">DE</button>
-        <button class="lang-button">FR</button>
+        <button onclick="langFunction('de-link')" class="lang-button">
+          DE
+        </button>
+        <button onclick="langFunction('en-link')" class="lang-button">
+          EN
+        </button>
+        <button onclick="langFunction('fr-link')" class="lang-button">
+          FR
+        </button>
+        <a href="pages/de/Vita.html" class="de-link">Vita</a>
+        <a href="pages/de/Werke.html" class="de-link">Werke</a>
+        <a href="pages/de/Einblicke.html" class="de-link">Einblicke</a>
+        <a href="pages/en/CV.html" class="en-link">CV</a>
+        <a href="pages/en/works.html" class="en-link">Works</a>
+        <a href="pages/en/insights.html" class="en-link">Insights</a>
+        <a href="pages/fr/CV.html" class="fr-link">CV</a>
+        <a href="pages/fr/Œuvre.html" class="fr-link">Œuvre</a>
+        <a href="pages/fr/Aperçu.html" class="fr-link">Aperçu</a>
       </div>
     </header>
+    <section class="works">
+      <h2 class="section-title">Werke</h2>
+      <div class="categories">
+        <div class="dropdown">
+          <button onclick="dropFunction('content-1')" class="dropbtn">
+            Kategorie 1
+          </button>
+          <div id="content-1" class="dropdown-content">
+            <ul>
+              <li>uno</li>
+              <li>dos</li>
+              <li>tres</li>
+            </ul>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button onclick="dropFunction('content-2')" class="dropbtn">
+            Kategorie 2
+          </button>
+          <div id="content-2" class="dropdown-content">
+            <ul>
+              <li>uno</li>
+              <li>dos</li>
+              <li>tres</li>
+            </ul>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button onclick="dropFunction('content-3')" class="dropbtn">
+            Kategorie 3
+          </button>
+          <div id="content-3" class="dropdown-content">
+            <ul>
+              <li>uno</li>
+              <li>dos</li>
+              <li>tres</li>
+            </ul>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button onclick="dropFunction('content-4')" class="dropbtn">
+            Kategorie 4
+          </button>
+          <div id="content-4" class="dropdown-content">
+            <ul>
+              <li>uno</li>
+              <li>dos</li>
+              <li>tres</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
