@@ -53,11 +53,11 @@ body {
 .language-selection {
   display: flex;
   justify-content: space-between;
-  position: absolute;
-  bottom: 150px;
+  position: fixed;
+  bottom: 50px;
   z-index: 999;
   gap: 20px;
-  width: 70%;
+  width: max(70vw, 350px);
 }
 
 .lang-button {
@@ -70,9 +70,10 @@ body {
   border: none;
 }
 
-.de-link {
+.de-link,
+.en-link,
+.fr-link {
   display: none;
-  font-family: "RomanIonic";
   background-color: rgba(0, 0, 0, 0.4);
   color: #fff;
   text-decoration: none;
@@ -82,7 +83,7 @@ body {
   border: none;
 }
 
-.en-link {
+/* .en-link {
   display: none;
   font-family: "RomanIonic";
   background-color: rgba(0, 0, 0, 0.4);
@@ -104,9 +105,15 @@ body {
   border-radius: 10% / 50%;
   cursor: pointer;
   border: none;
-}
+} */
 
 .lang-button:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.de-link:hover,
+.en-link:hover,
+.fr-link:hover {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
