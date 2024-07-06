@@ -5,6 +5,18 @@
   src: url("../fonts/RomanIonic.ttf");
 }
 
+@media only screen and (min-width: 600px) {
+  .language-selection {
+    top: 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .language-selection {
+    bottom: 50px;
+  }
+}
+
 body {
   font-family: "RomanIonic";
   margin: 0;
@@ -54,7 +66,6 @@ body {
   display: flex;
   justify-content: space-between;
   position: fixed;
-  bottom: 50px;
   z-index: 999;
   gap: 20px;
   width: max(70vw, 350px);
