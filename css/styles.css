@@ -1,4 +1,3 @@
-
 @media only screen and (min-width: 601px) {
   nav {
     top: 0;
@@ -17,11 +16,30 @@
   scroll-behavior: smooth;
 }
 
+html {
+  font-size: 100%;
+  /* line-height: 1.5rem; */
+  box-sizing: border-box;
+  height: 100%;
+}
+
 body {
   font-family: "Titillium Web";
-  margin: 0; */
+  margin: 0 auto;
   padding: 0;
   height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .hero {
@@ -117,7 +135,6 @@ nav {
   background-color: rgba(0, 0, 0, 0.6);
 } */
 
-
 /* .de-link:hover,
 .en-link:hover,
 .fr-link:hover {
@@ -190,8 +207,46 @@ nav {
   margin-top: 50px;
 }
 
-
-section {
-  height: 80svh;
+/* begin styles for gallery */
+.vita {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.gallery {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem 10rem 1rem;
 }
 
+.bio {
+  flex: 1;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-auto-rows: 150px;
+  grid-gap: 0.5rem;
+}
+
+.gallery-item {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.gallery-img {
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s ease-in-out;
+}
+
+.gallery-img:hover {
+  transform: scale(1.5);
+}
+
+/* section {
+  height: 80svh;
+} */
