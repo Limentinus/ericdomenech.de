@@ -12,6 +12,7 @@
     />
 
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/glightbox.min.css" />
     <script src="js/script.js" defer></script>
   </head>
   <body>
@@ -33,52 +34,52 @@
         <h2>Photos</h2>
         <div class="gallery-container">
           <div class="gallery-item">
-            <a href="img/IMG_1.webp"
+            <a href="img/IMG_1.webp" class="glightbox"
               ><img src="img/IMG_1.webp" alt="Portrait 1" class="gallery-img"
             /></a>
           </div>
           <div class="gallery-item">
-            <a href="img/IMG_2.webp"
+            <a href="img/IMG_2.webp" class="glightbox"
               ><img src="img/IMG_2.webp" alt="Portrait 2" class="gallery-img"
             /></a>
           </div>
           <div class="gallery-item">
-            <a href="img/IMG_3.webp"
+            <a href="img/IMG_3.webp" class="glightbox"
               ><img src="img/IMG_3.webp" alt="Portrait 3" class="gallery-img"
             /></a>
           </div>
           <div class="gallery-item">
-            <a href="img/IMG_4.webp"
+            <a href="img/IMG_4.webp" class="glightbox"
               ><img src="img/IMG_4.webp" alt="Portrait 4" class="gallery-img"
             /></a>
           </div>
           <div class="gallery-item">
-            <a href="img/IMG_5.webp"
+            <a href="img/IMG_5.webp" class="glightbox"
               ><img src="img/IMG_5.webp" alt="Portrait 5" class="gallery-img"
             /></a>
           </div>
           <div class="gallery-item">
-            <a href="img/IMG_6.webp"
+            <a href="img/IMG_6.webp" class="glightbox"
               ><img src="img/IMG_6.webp" alt="Portrait 6" class="gallery-img"
             /></a>
           </div>
           <div class="gallery-item">
-            <a href="img/IMG_7.webp"
+            <a href="img/IMG_7.webp" class="glightbox"
               ><img src="img/IMG_7.webp" alt="Portrait 7" class="gallery-img"
             /></a>
           </div>
           <div class="gallery-item">
-            <a href="img/IMG_8.webp"
+            <a href="img/IMG_8.webp" class="glightbox"
               ><img src="img/IMG_8.webp" alt="Portrait 8" class="gallery-img"
             /></a>
           </div>
           <div class="gallery-item">
-            <a href="img/IMG_9.webp"
+            <a href="img/IMG_9.webp" class="glightbox"
               ><img src="img/IMG_9.webp" alt="Portrait 9" class="gallery-img"
             /></a>
           </div>
           <div class="gallery-item">
-            <a href="img/IMG_10.webp"
+            <a href="img/IMG_10.webp" class="glightbox"
               ><img src="img/IMG_10.webp" alt="Portrait 10" class="gallery-img"
             /></a>
           </div>
@@ -201,5 +202,9 @@
         </div>
       </div>
     </section> -->
+    <script src="js/glightbox.min.js"></script>
+    <script type="text/javascript">
+      const lightbox = GLightbox({ loop: true });
+    </script>
   </body>
 </html>
