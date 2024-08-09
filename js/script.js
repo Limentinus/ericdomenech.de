@@ -28,7 +28,6 @@ window.onclick = function (event) {
 
 function langFunction(language) {
   let langLinks = document.getElementsByClassName(language);
-  console.log(langLinks);
   for (i = 0; i < langLinks.length; i++) {
     let langLink = langLinks[i];
     langLink.classList.toggle("show");

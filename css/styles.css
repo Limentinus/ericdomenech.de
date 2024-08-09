@@ -122,7 +122,8 @@ nav {
   cursor: pointer;
   border: none;
 }
-/* .lang-button {
+
+.lang-button {
   font-family: "RomanIonic";
   background-color: rgba(0, 0, 0, 0.4);
   color: #fff;
@@ -130,9 +131,9 @@ nav {
   border-radius: 10% / 50%;
   cursor: pointer;
   border: none;
-} */
+}
 
-/* .de-link,
+.de-link,
 .en-link,
 .fr-link {
   display: none;
@@ -143,19 +144,23 @@ nav {
   border-radius: 10% / 50%;
   cursor: pointer;
   border: none;
-} */
+}
 
-/* .lang-button:hover {
+.lang-button:hover {
   background-color: rgba(0, 0, 0, 0.6);
-} */
+}
 
-/* .de-link:hover,
+.de-link:hover,
 .en-link:hover,
 .fr-link:hover {
   background-color: rgba(0, 0, 0, 0.6);
-/* } */
+}
 
 .nav-link:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.current {
   background-color: rgba(0, 0, 0, 0.6);
 }
 

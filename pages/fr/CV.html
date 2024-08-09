@@ -3,9 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vita</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <script src="script/script.js" defer></script>
+    <title>CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/glightbox.min.css" />
+    <script src="/js/script.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <nav>
+      <div class="nav-selection">
+        <button type="button" onclick="javascript:history.back()"><</button>
+        <a href="/pages/fr/CV.html" class="nav-link show current">CV</a>
+        <a href="/pages/fr/Œuvre.html" class="nav-link show">Œuvre</a>
+        <a href="/pages/fr/Aperçu.html" class="nav-link show">Aperçu</a>
+      </div>
+    </nav>
+
+    <script src="/js/glightbox.min.js"></script>
+    <script type="text/javascript">
+      const lightbox = GLightbox({ loop: true });
+    </script>
+  </body>
 </html>
