@@ -185,7 +185,7 @@ nav {
 }
 
 .works {
-  height: 100svh;
+  /* height: 100svh; */
   display: flex;
   flex-direction: column;
 }
@@ -236,6 +236,45 @@ nav {
 .hide {
   display: none;
   transition: max-height 0.3s ease-out;
+}
+
+.work {
+  display: grid;
+  grid-template-columns: repeat(11, 80px);
+  grid-template-rows: repeat(7, 80px);
+  height: 560px;
+  width: 880px;
+}
+
+.work-title {
+  grid-column: 1 / 12;
+  grid-row: 1;
+}
+
+.work-genre {
+  grid-column: 1 / 12;
+  grid-row: 2;
+}
+
+.work-length {
+  grid-column: 1 / 12;
+  grid-row: 3;
+  border-bottom: 2px solid black;
+}
+
+.work-video {
+  grid-row: 4 / 6;
+  grid-column: 1 / 3;
+}
+
+.work-description {
+  grid-row: 4 / 7;
+  grid-column: 4 / 12;
+}
+
+.work-material {
+  grid-row: 7;
+  grid-column: 8 / 12;
 }
 
 .content {
