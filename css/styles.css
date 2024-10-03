@@ -249,32 +249,43 @@ nav {
 .work-title {
   grid-column: 1 / 12;
   grid-row: 1;
+  padding-left: 10px;
 }
 
 .work-genre {
   grid-column: 1 / 12;
   grid-row: 2;
+  padding-left: 10px;
 }
 
 .work-length {
   grid-column: 1 / 12;
   grid-row: 3;
   border-bottom: 2px solid black;
+  padding-left: 10px;
 }
 
 .work-video {
   grid-row: 4 / 6;
   grid-column: 1 / 3;
+  padding-left: 10px;
 }
 
 .work-description {
   grid-row: 4 / 7;
   grid-column: 4 / 12;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.work-description p {
+  margin-top: 0px;
 }
 
 .work-material {
   grid-row: 7;
   grid-column: 8 / 12;
+  padding-left: 10px;
 }
 
 .content {
